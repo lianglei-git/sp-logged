@@ -1,0 +1,28 @@
+.unit {
+  display: inline-flex;
+  width: 400px;
+  height: 600px;
+  flex-direction: column;
+  overflow: auto;
+  border: 1px solid #302424;
+  border-radius: 5px;
+  position: relative;
+}
+.unit > h1 {
+  position: sticky;
+  top: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background: #fff;
+}
+.unit-item {
+  margin: 0px;
+  padding-left: 10px;
+  display: flex;
+  border-radius: 5px;
+}
+.unit-item .line-overlays {
+  color: #888c89;
+  margin-right: 10px;
+}
