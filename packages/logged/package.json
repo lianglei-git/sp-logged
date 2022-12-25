@@ -1,0 +1,16 @@
+{
+  "name": "logged",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cout": "vite-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "stream": "workspace:^1.0.0"
+  }
+}

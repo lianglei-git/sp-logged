@@ -1,0 +1,13 @@
+{
+  "name": "file_events",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "t:event": "node event.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,21 @@
+{
+  "name": "stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "cout": "vite-node ./cout.ts",
+    "start": "vite-node index.ts",
+    "flush": "vite-node ./lib/flush.ts",
+    "vitest": "vitest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^4.0.14",
+    "fs-extra": "^10.1.0",
+    "shared": "workspace:^1.0.0"
+  }
+}

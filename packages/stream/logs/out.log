@@ -1,0 +1,25 @@
+red[2022-12-03T14:56:32.957] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
