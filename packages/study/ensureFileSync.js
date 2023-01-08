@@ -1,6 +1,4 @@
-// const fs = require('');
 import fs from 'fs-extra'
-
 
 fs.ensureFileSync('./a/b/c/app.js') // ==》 ok
 

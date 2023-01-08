@@ -5,10 +5,12 @@ importers:
   .:
     specifiers:
       '@types/fs-extra': ^9.0.13
+      fs-extra: ^10.1.0
       vite: ^3.2.4
       vite-node: ^0.24.3
       vitest: ^0.24.3
     dependencies:
+      fs-extra: 10.1.0
       vite: 3.2.4
       vite-node: 0.24.3
       vitest: 0.24.3
