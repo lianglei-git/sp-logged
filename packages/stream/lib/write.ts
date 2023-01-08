@@ -23,7 +23,8 @@ const isHas = Reflect.has;
  */
 const defaultConfig = {
   path: process.cwd() + "/logs/out.log",
-  maxFileSize: 10 * 1024 * 1000,
+  // maxFileSize: 10 * 1024 * 1000,
+  maxFileSize: 10  * 1000,
   fileSize: 0,
   isPathExists: false,
   plugins: [],
@@ -252,15 +253,22 @@ class StreamWrite extends _StreamWrite implements $StreamWrite {
     const buffer = Buffer.from(stdoutContent);
     this.useLogFileSize += buffer.length;
     this.largeFileHandle();
-    this.ws.write(buffer, (err: Error | unknown) => {
-      console.log(err, "errerr");
+    // 更新一下，因为每次写入后外面无法监听，后续在做优化吧
+    // this.ws.write(buffer, (err: Error | unknown) => {
+    //   console.log(err, "errerr");
 
-      // if (this.chunks.length == 0) {
-      //     self.writeable = false;
-      // }else {
-      //     this.chunks.shift()();
-      // }
-    });
+    //   // if (this.chunks.length == 0) {
+    //   //     self.writeable = false;
+    //   // }else {
+    //   //     this.chunks.shift()();
+    //   // }
+    // });
+
+    // 新的逻辑
+    const ws = this._createWriteStream();
+    ws.end(buffer, (err?:any) => {
+      console.log(err);
+    })
   };
 
   // 数据转换 = [{}, '', bool] => "{}''bool"

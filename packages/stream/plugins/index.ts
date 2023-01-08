@@ -37,8 +37,9 @@ const writeSQLPlugin = (next:any, log: any) => {
 
 
 // 暂时没有用处
-const transformLinePlugin = () => {
+const transformLinePlugin = (next:any, log: any) => {
 
+    next(log);
 }
 
 // 定义一下 log文件内容格式
@@ -48,6 +49,9 @@ const transformLinePlugin = () => {
  * 1. ==> [2022-12-11:9:30] [严重] [Err] 信息体
  * 2.  
  */
+
+
+// DEFINE format for ""
 
 export {
     transformLinePlugin,

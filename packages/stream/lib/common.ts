@@ -1,5 +1,5 @@
 import path from 'path';
-import { writeFileSync, readFileSync, rm } from 'fs-extra'
+import { writeFileSync, readFileSync, rm, readSync, openSync } from 'fs-extra'
 
 export type HistoryContentConfig = {
     path?: string;
@@ -16,6 +16,13 @@ type HistoryFileContentType = {
 
 }
 
+abstract class _Common {
+    getFileStarts(filepath:string) {
+        const fd = openSync(filepath, 'r');
+        // readSync(fd, {})
+    }
+}
+
 export default class Common {
 
     /** Config file path of history stream */
@@ -25,6 +32,7 @@ export default class Common {
     /** content for history stream config  */
     hscf_content: HistoryFileContentType = this.readHscf() || Object.create(null)
 
+    
     public flush = () => {
         let maps: string[] = Array();
         for (let key in this.hscf_content) {

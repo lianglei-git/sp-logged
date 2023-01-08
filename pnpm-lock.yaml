@@ -25,10 +25,12 @@ importers:
 
   packages/stream:
     specifiers:
+      chokidar: ^3.5.3
       date-format: ^4.0.14
       fs-extra: ^10.1.0
       shared: workspace:^1.0.0
     dependencies:
+      chokidar: 3.5.3
       date-format: 4.0.14
       fs-extra: 10.1.0
       shared: link:../shared

@@ -10,5 +10,7 @@ describe('TDD --- plugins', () => {
     test('plugin ==> transformLinePlugin', () => {
         const _ws = ws.use(transformLinePlugin);
         _ws.write(_enum);
+        _ws.write('ps--666');
+        console.log('写入晚很')
     })
 })

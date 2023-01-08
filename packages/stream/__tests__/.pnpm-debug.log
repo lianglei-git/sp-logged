@@ -1,0 +1,16 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged"
+  },
+  "1 error pnpm": {
+    "code": "ERR_PNPM_NO_SCRIPT",
+    "hint": "But test is present in the root of the workspace,\nso you may run \"pnpm -w run test\"",
+    "err": {
+      "name": "pnpm",
+      "message": "Missing script: test",
+      "code": "ERR_PNPM_NO_SCRIPT",
+      "stack": "pnpm: Missing script: test\n    at Object.handler (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:170950:19)\n    at async /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:175391:21\n    at async run (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:175365:34)\n    at async runPnpm (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:175583:5)\n    at async /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:175575:7"
+    }
+  }
+}
