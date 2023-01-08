@@ -42,11 +42,11 @@ class StreamWatch extends Common {
     };
 
     // 截取文件start到end的内容
-    sclieContent(fd, strat, end) {
+    // sclieContent(fd, strat, end) {
 
-    }
+    // }
 
-    
+
     // 兼容300毫秒内出现多次触发
     adapter300MSChangeContent() {
 
@@ -56,6 +56,7 @@ class StreamWatch extends Common {
     getEndChangeConetnt(path: string, length: number = 0, position: number = 0): Promise<any> {
         // 后续可能使用readStream优化
         // 要做300毫秒内的优化，做个储存功能解决 性能不足问题
+        this.adapter300MSChangeContent();
         const fd = openSync(path, 'r');
         if (typeof fd !== 'number') {
             if (this._eventCallback('stdError', 'getEndChangeConetnt', EOL + 'openSync -> Error_Normal')) {

@@ -24,7 +24,7 @@ const isHas = Reflect.has;
 const defaultConfig = {
   path: process.cwd() + "/logs/out.log",
   // maxFileSize: 10 * 1024 * 1000,
-  maxFileSize: 10  * 1000,
+  maxFileSize: 10 * 1000,
   fileSize: 0,
   isPathExists: false,
   plugins: [],
@@ -37,8 +37,8 @@ export type Dispose_StreamWriteConfig = HistoryContentConfig & {
   // ws options
   maxFileSize?: number;
   wsoptions?: typeof createWriteStream extends (k1: any, k2: infer U) => any
-    ? U
-    : never;
+  ? U
+  : never;
   [k: string]: any;
 };
 
@@ -138,7 +138,7 @@ abstract class _StreamWrite extends Common {
     let size: any = 0;
     try {
       size = statSync(pathLike).size;
-    } catch {}
+    } catch { }
     return size;
   };
 }
@@ -191,6 +191,7 @@ class StreamWrite extends _StreamWrite implements IStreamWrite {
     this.created(_config);
 
     process.on("exit", this.destory);
+
   }
 
   created = (_config: any): void => {
@@ -266,8 +267,10 @@ class StreamWrite extends _StreamWrite implements IStreamWrite {
 
     // 新的逻辑
     const ws = this._createWriteStream();
-    ws.end(buffer, (err?:any) => {
-      console.log(err);
+    ws.end(buffer, (err?: any) => {
+      if (err) {
+        console.log(err, '_lastWritePlugin')
+      }
     })
   };
 

@@ -1,1 +1,28 @@
-{"/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out.log":{"path":"/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out.log","maxFileSize":10240000,"fileSize":0,"isPathExists":true,"plugins":[],"history":[]}}
+{
+    "/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out.log": {
+        "path": "/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out.log",
+        "maxFileSize": 10240000,
+        "fileSize": 0,
+        "isPathExists": true,
+        "plugins": [],
+        "history": [{
+            "path": "/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out-1.log",
+            "maxFileSize": 10000,
+            "fileSize": 10266,
+            "isPathExists": false,
+            "plugins": [],
+            "wsoptions": {
+                "flags": "a+"
+            }
+        }, {
+            "path": "/Users/apple/Desktop/sparrow/frontend/myself/sparrow-pro/sp-logged/packages/stream/logs/out-2.log",
+            "maxFileSize": 10000,
+            "fileSize": 10208,
+            "isPathExists": false,
+            "plugins": [],
+            "wsoptions": {
+                "flags": "a+"
+            }
+        }]
+    }
+}

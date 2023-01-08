@@ -26,6 +26,8 @@ async function cout() {
     await log("  - Support output of different color conversion streams; \n", { every: true, time: 50 });
     
     await log("  - Support read file; \n", { every: true, time: 50 });
+
+    await log("  - Handle high frequency reads; I think I can. \n", { every: true, time: 50 });
     
 }
 

@@ -49,7 +49,6 @@ export default class Common {
 
     /** update content for history stream config File*/
     writeHscf(): void {
-        console.log('写入文件呢呢嫩嫩嗯')
         writeFileSync(this.hscfp, JSON.stringify(this.hscf_content));
     }
 

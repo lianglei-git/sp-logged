@@ -6,6 +6,11 @@ import Entry from '../index';
 import Watch from '../lib/watch';
 import Content from './stdoutContent';
 
+
+
+//   setTimeout(() => {
+//     process.exit()
+//   }, 5000)
 const stream = new Entry({
     writeConfig: {
         wsoptions: {
@@ -14,7 +19,10 @@ const stream = new Entry({
     },
     watchConfig: { 
         watchOptions: { 
-            rootDir: path.resolve('../')
+            rootDir: path.resolve(__dirname, '../logs')
+        },
+        fileChange(event, pathLike, conetnt) {
+            console.log(event, pathLike, conetnt)
         }
     }
 });
@@ -22,8 +30,9 @@ const stream = new Entry({
 
 function base() {
     setInterval(() => {
-        stream.write(Content /**Math.random() + '\n' + '2' */);
-    }, 300)
+        // stream.write(/** Content */ Math.random() + '\n' + '2' );
+        stream.write(Content);
+    }, 10000)
 }
 
 
