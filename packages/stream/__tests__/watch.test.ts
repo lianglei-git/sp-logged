@@ -1,16 +1,29 @@
-import Entry from '../index';
-import Content from './stdoutContent';
-import Watch from '../lib/watch';
+import { appendFile, createWriteStream } from 'fs-extra';
 import path from 'path';
 import createObject from 'shared/createObject';
-import { appendFile, createWriteStream } from 'fs-extra';
-import utils from 'util'
+import utils from 'util';
+import Entry from '../index';
+import Watch from '../lib/watch';
+import Content from './stdoutContent';
 
-const stream = new Entry();
+const stream = new Entry({
+    writeConfig: {
+        wsoptions: {
+            flags: 'a+'
+        }
+    },
+    watchConfig: { 
+        watchOptions: { 
+            rootDir: path.resolve('../')
+        }
+    }
+});
+
+
 function base() {
     setInterval(() => {
-        stream.write(Content);
-    }, 3000)
+        stream.write(Content /**Math.random() + '\n' + '2' */);
+    }, 300)
 }
 
 

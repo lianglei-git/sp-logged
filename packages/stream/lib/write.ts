@@ -32,7 +32,7 @@ const defaultConfig = {
 
 // const __dirname = dirname(fileURLToPath(import.meta.url));
 
-type Dispose_StreamWriteConfig = HistoryContentConfig & {
+export type Dispose_StreamWriteConfig = HistoryContentConfig & {
   fileSize?: number;
   // ws options
   maxFileSize?: number;
@@ -46,14 +46,14 @@ type StreamWriteConfig = {
   [k in keyof Dispose_StreamWriteConfig]-?: Dispose_StreamWriteConfig[k];
 };
 /** write entry */
-type $StreamWrite = {
+type IStreamWrite = {
   config: Dispose_StreamWriteConfig;
   plugins: any[];
   ws: WriteStream;
 };
 
 abstract class _StreamWrite extends Common {
-  defaultWsOptions: $StreamWrite["config"]["wsoptions"] & object = {
+  defaultWsOptions: IStreamWrite["config"]["wsoptions"] & object = {
     mode: 438,
     flags: "w+", // 'a+'
     encoding: "utf8", // base64
@@ -165,7 +165,7 @@ enum LevelType {
   Fatal,
   Off,
 }
-class StreamWrite extends _StreamWrite implements $StreamWrite {
+class StreamWrite extends _StreamWrite implements IStreamWrite {
   ws!: WriteStream;
 
   // 只有初始化会进行赋值
@@ -185,7 +185,7 @@ class StreamWrite extends _StreamWrite implements $StreamWrite {
 
   config!: StreamWriteConfig;
 
-  constructor(_config: $StreamWrite["config"] = defaultConfig) {
+  constructor(_config: IStreamWrite["config"] = defaultConfig) {
     super();
     if (!isObject(_config)) throw Error("请传入对象类型.");
     this.created(_config);

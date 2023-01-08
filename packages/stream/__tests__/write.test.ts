@@ -12,6 +12,9 @@ const examples_ws = (ws: any) => {
 }
 
 const created = () => {
+
+
+
     const ws = createObject(Write, {
         path: process.cwd() + '/logs/cout.log',
         maxFileSize: 1000 * 15,
@@ -32,13 +35,13 @@ describe.skip('wirte', () => {
 
     it('如果文件过大，则新建文件', () => {
         vi.useFakeTimers();
-        Array(10).fill(0).map(() =>  ws.write(ws))
+        Array(10).fill(0).map(() => ws.write(ws))
         console.log('直接执行的')
         vi.runAllTimers();
 
         setTimeout(() => {
             console.log('2秒之后执行的');
-             ws.destory();
+            ws.destory();
         }, 2000)
 
         vi.advanceTimersToNextTimer()
@@ -50,3 +53,6 @@ describe.skip('wirte', () => {
         ws.destory();
     })
 })
+
+
+
