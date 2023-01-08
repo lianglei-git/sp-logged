@@ -1,33 +1,33 @@
 /** rewrite color.js */
 const formatter =
-  (open, close, replace = open) =>
-    (input) => {
+  (open: string, close: string, replace = open) =>
+    (input: string) => {
       const string = '' + input;
       const index = string.indexOf(close, open.length);
       return ~index ? open + replaceClose(string, close, replace, index) + close : open + string + close;
     };
 
-const replaceClose = (string, close, replace, index) => {
+const replaceClose = (string: string, close: string, replace: any, index: number):string => {
   const start = string.substring(0, index) + replace;
   const end = string.substring(index + close.length);
   const nextIndex = end.indexOf(close);
   return ~nextIndex ? start + replaceClose(end, close, replace, nextIndex) : start + end;
 };
-const toBrowserColor = (color) => (input) => `<span style="color:${color}">${input}</span>`.replaceAll('\n', '<br />');
-const toBrowserColorB = (color) => (input) =>
+const toBrowserColor = (color: string) => (input: any) => `<span style="color:${color}">${input}</span>`.replaceAll('\n', '<br />');
+const toBrowserColorB = (color: string) => (input: any) =>
   `<span style="background:${color};"><span style="filter: invert(100%);color:${color}">${input}</span></span>`.replaceAll('\n', '<br />');
 
 const createColors = (enabled = true) => ({
-  reset: enabled ? (s) => `\x1b[0m${s}\x1b[0m` : String,
+  reset: enabled ? (s: any) => `\x1b[0m${s}\x1b[0m` : String,
   bold: enabled
     ? formatter('\x1b[1m', '\x1b[22m', '\x1b[22m\x1b[1m')
-    : (msg) => `<span style="font-weight: bold">${msg}</span>`,
+    : (msg: any) => `<span style="font-weight: bold">${msg}</span>`,
   dim: enabled ? formatter('\x1b[2m', '\x1b[22m', '\x1b[22m\x1b[2m') : String,
   italic: enabled ? formatter('\x1b[3m', '\x1b[23m') : String,
   underline: enabled ? formatter('\x1b[4m', '\x1b[24m') : String,
   inverse: enabled
     ? formatter('\x1b[7m', '\x1b[27m')
-    : (msg) => `<span style="filter: invert(100%)">${msg}</span>`,
+    : (msg: any) => `<span style="filter: invert(100%)">${msg}</span>`,
   hidden: enabled ? formatter('\x1b[8m', '\x1b[28m') : String,
   strikethrough: enabled ? formatter('\x1b[9m', '\x1b[29m') : String,
   //

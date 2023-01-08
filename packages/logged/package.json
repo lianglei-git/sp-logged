@@ -2,15 +2,19 @@
   "name": "logged",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
+  "types": "./global.d.ts",
   "scripts": {
-    "cout": "vite-node"
+    "cout": "vite-node cout.ts",
+    "start": "vite-node index.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.5.3",
+    "shared": "workspace:^1.0.0",
+    "socket.io": "^4.5.4",
     "stream": "workspace:^1.0.0"
   }
 }

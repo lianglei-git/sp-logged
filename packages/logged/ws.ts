@@ -1,6 +1,6 @@
-import socketIO from 'socket.io';
-import BaseIoServer from './ws.serve.js';
-import { UUID } from './u.js';
+import {Server as socketIO} from 'socket.io';
+import BaseIoServer from './ws.serve';
+import { UUID } from './u';
 
 const wsServerEvents = ['connection', 'error', 'headers', 'listening', 'message'];
 const wsBasicEventName = ['connection', 'disconnect', 'error', 'connect', 'join', 'ping', 'reconnect'];
@@ -44,7 +44,7 @@ class CreateWebSocketServer {
 
   startup() {
     if (this.#_beforeConnect() === true) return void 0;
-    this.wss = socketIO(this.wsServer.server, {
+    this.wss = new socketIO(this.wsServer.server, {
       serveClient: false,
       cors: {
         credentials: true

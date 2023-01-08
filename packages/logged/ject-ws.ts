@@ -28,27 +28,27 @@ function removeShowVFile() {
   return isInstance() && rmSync(FLAG_FILE_PATH);
 }
 
-const gl = {
+const gl:any = {
   private_ws: null,
-  sendMsg(str) {
+  sendMsg(str: any) {
     isInstance();
     this.private_ws.emit('log_msg', str);
   },
   instance() {
-    if (isInstance) throw Error('Only one instance object can exist!');
+    // if (isInstance()) throw Error('Only one instance object can exist!');
     createShowVFile();
     this.private_ws = new CreateWebSocketServer(void 0, {
       port: 28256,
-      onConnected(socket) {
+      onConnected(socket:any) {
         console.log('privaste 连接成功');
       },
       onBeforeConnect() {
         setTimeout(() => {
-          this.private_ws.wsServer.defineRouteDisconnect((ctx) => {
-            console.log('关闭socket');
-            // ws.close();
-            // ctx.body = {};
-          });
+          // this.private_ws.wsServer.defineRouteDisconnect((ctx:any) => {
+          //   console.log('关闭socket');
+          //   // ws.close();
+          //   // ctx.body = {};
+          // });
         }, 1000);
       },
       onBeforeClose() {
@@ -56,6 +56,8 @@ const gl = {
         return true;
       }
     });
+
+    return this.private_ws ;
   }
 };
 export default gl;
