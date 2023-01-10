@@ -22,3 +22,478 @@ red[2023-01-08T17:22:05.129] [all] 重要 - 0.993151974717347
 red[2023-01-08T17:22:09.131] [all] 重要 - 0.5214042361964439
 red[2023-01-08T17:22:13.131] [all] 重要 - 0.6937745562145377
 red[2023-01-08T17:22:17.135] [all] 重要 - 0.1649595642727102
+red[2023-01-08T20:52:14.357] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:18.359] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:22.362] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:26.362] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:30.363] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:34.363] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:38.364] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:42.367] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:46.371] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:50.376] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:54.377] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:52:58.383] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:02.387] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:06.392] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:10.396] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:14.397] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:18.403] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:22.403] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}
+red[2023-01-08T20:53:26.404] [all] 重要 - {
+  _Symbol: Symbol(20%),
+  _String: '10',
+  arr: [
+    10,
+    '10',
+    Symbol(20%),
+    [],
+    [Function: Array],
+    [Function: Object],
+    [Function: Promise]
+  ],
+  _Promise: Promise {
+    [
+      10,
+      '10',
+      Symbol(20%),
+      [],
+      [Function: Array],
+      [Function: Object],
+      [Function: Promise]
+    ]
+  },
+  _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
+}

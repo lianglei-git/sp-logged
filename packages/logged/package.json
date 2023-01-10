@@ -6,7 +6,8 @@
   "types": "./global.d.ts",
   "scripts": {
     "cout": "vite-node cout.ts",
-    "start": "vite-node index.ts"
+    "start": "vite-node index.ts",
+    "demo1": "vite-node ./__tests__/demo1.ts"
   },
   "keywords": [],
   "author": "",

@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "pnpm --filter stream cout ./cout.ts"
+    "test": "pnpm --filter stream cout ./cout.ts",
+    "ui:design1": "pnpm --filter=logged run demo1 & sleep 2 & pnpm --filter=ui run start"
   },
   "keywords": [],
   "author": "",
