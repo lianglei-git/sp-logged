@@ -22,7 +22,7 @@ const reStream = createObject(Stream, {
             // console.log(event, pathLike, conetnt)
             private_ws.emit('log_msg', {
                 id: pathLike,
-                str: conetnt
+                message: conetnt
             });
         }
     }
@@ -31,4 +31,4 @@ const reStream = createObject(Stream, {
 
 setInterval(() => {
     reStream.write(testContent)
-}, 4000)
+}, 1000)

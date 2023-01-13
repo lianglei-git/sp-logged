@@ -12,7 +12,9 @@ const createInfo = (basic) => {
   const addLine = (data) => {
     lines.push(data || baseMsg);
   };
-  const info = reactive({ clientName: '', id: '', ...basic, lines, addLine });
+  const info = reactive(
+    { clientName: '', id: '在线测试🉑️', ...basic, lines, addLine }
+    );
 
   return info;
 };
