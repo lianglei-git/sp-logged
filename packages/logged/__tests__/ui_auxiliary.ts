@@ -1,7 +1,8 @@
 /// <reference path="../global.d.ts" />
-import Stream from 'stream/index';
-import testContent from 'stream/__tests__/stdoutContent'
-import createObject from 'shared/createObject'
+/** ui_ auxiliary:1.0 version */
+import Stream from '@splogged/stream/index';
+import testContent from '@splogged/stream/__tests__/stdoutContent'
+import createObject from '@splogged/shared/createObject'
 import path from 'path';
 import Gl from '../ject-ws'
 const private_ws = Gl.instance()

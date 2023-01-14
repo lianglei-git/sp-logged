@@ -1,5 +1,5 @@
 {
-  "name": "logged",
+  "name": "splogged",
   "version": "1.0.0",
   "description": "",
   "main": "index.ts",
@@ -7,15 +7,15 @@
   "scripts": {
     "cout": "vite-node cout.ts",
     "start": "vite-node index.ts",
-    "demo1": "vite-node ./__tests__/demo1.ts"
+    "ui_auxiliary:1.0": "vite-node __tests__/ui_auxiliary.ts"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.5.3",
-    "shared": "workspace:^1.0.0",
+    "@splogged/shared": "workspace:*",
     "socket.io": "^4.5.4",
-    "stream": "workspace:^1.0.0"
+    "@splogged/stream": "workspace:*"
   }
 }

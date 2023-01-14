@@ -1,4 +1,4 @@
-import createObject from 'shared/createObject'
+import createObject from '@splogged/shared/createObject'
 import Write from './lib/write'
 import Watch from './lib/watch'
 import type { Dispose_StreamWriteConfig } from './lib/write'

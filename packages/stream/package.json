@@ -1,8 +1,8 @@
 {
-  "name": "stream",
-  "version": "1.0.0",
+  "name": "@splogged/stream",
+  "version": "0.0.1",
   "description": "",
-  "main": "index.js",
+  "main": "index.ts",
   "type": "module",
   "scripts": {
     "cout": "vite-node ./cout.ts",
@@ -10,13 +10,18 @@
     "flush": "vite-node ./lib/flush.ts",
     "vitest": "vitest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lianglei-git/sp-logged.git",
+    "directory": "packages/stream"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "chokidar": "^3.5.3",
+    "@splogged/shared": "workspace:*",
     "date-format": "^4.0.14",
-    "fs-extra": "^10.1.0",
-    "shared": "workspace:^1.0.0"
+    "fs-extra": "^10.1.0"
   }
 }

@@ -1,8 +1,18 @@
 {
     "extends": "../../tsconfig.json",
-    // "compilerOptions": {
-    //     "moduleResolution": "NodeNext",
-    //     "target": "esnext",
-    //     "module": "esnext"
-    // }
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "esModuleInterop": true,
+        "strict": true,
+        "strictNullChecks": true,
+        "resolveJsonModule": true,
+        "skipDefaultLibCheck": true,
+        "skipLibCheck": true,
+        "outDir": "./dist",
+        "declaration": true,
+        "inlineSourceMap": true
+    },
+    "include": ["**/*.ts"],
 }
