@@ -1,11 +1,10 @@
 {
-
   "name": "@splogged/ui",
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "http-server -o"
+    "start": "http-server -o -c 1"
   },
   "files": [
     "dist"
@@ -14,6 +13,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "http-server": "^14.1.1"
+    "@sparrowend/ui": "^1.1.5",
+    "http-server": "^14.1.1",
+    "socket.io": "4.4.1",
+    "vue": "^3.2.45"
   }
 }

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./source/css/index.css">
-    <link rel="stylesheet" href="./modules/sparrow/ui/spui.css">
+    <link rel="stylesheet" href="./node_modules/@sparrowend/ui/dist/spui.css">
     <!-- <link rel="stylesheet" href="./packages/logger-client/source/css/index.css"> -->
 </head>
 <body>
@@ -14,11 +14,11 @@
     <script type="importmap"> 
         {
             "imports": {
-                "vue": "../../modules/vue/index.js",
+                "vue": "./node_modules/vue/dist/vue.esm-browser.js",
                 "utils": "./source/utils/index.js",
                 "hooks": "./source/hooks/index.js",
-                "socket": "../../modules/socket-client/index.js",
-                "sparrow-ui": "./modules/sparrow/ui/spui-es.js"
+                "socket": "./node_modules/socket.io/client-dist/socket.io.esm.min.js",
+                "@sparrowend/ui": "./node_modules/@sparrowend/ui/dist/spui-es.js"
             }
         }
     </script>

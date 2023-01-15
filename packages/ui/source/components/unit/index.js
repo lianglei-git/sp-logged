@@ -7,7 +7,8 @@ import { io } from 'socket';
 const template = await loadVue(import.meta.url, 'index.vue');
 
 const startup = (base) => {
-  createWsHook().then((ws) => {
+  createWsHook()
+  .then((ws) => {
     ws.on('log_msg', (data) => {
       if(data.id && data.id.length > 9) {
         data.id = data.id.slice(-9)
@@ -45,7 +46,7 @@ export default defineComponent({
     // onUpdated(() => {
     //   console.log('更新了', container.value);
     // });
-    startup(base);
+    // startup(base);
     return { infos: base.infos, container };
   }
 });
