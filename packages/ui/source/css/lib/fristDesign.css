@@ -1,0 +1,15 @@
+.design1_0 {
+  width: 100%;
+  height: 100%;
+}
+.design1_0 .dir {
+  width: 18%;
+  background-color: #f6f8fe;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 12px 16px;
+}
+.design1_0 .dir .logo {
+  width: 100%;
+  word-spacing: 10px;
+}

@@ -1,3 +1,4 @@
+@import 'lib/fristDesign.css';
 body,
 html,
 #app {
@@ -10,12 +11,9 @@ html,
 }
 .unit {
   display: inline-flex;
-  /* width: 400px; */
   height: 300px;
   flex-direction: column;
   overflow: auto;
-  /* border: 1px solid #302424; */
-  border-radius: 5px;
   position: relative;
 }
 .unit > h1 {

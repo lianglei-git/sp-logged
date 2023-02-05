@@ -36,10 +36,7 @@ importers:
       socket.io: 4.5.4
 
   packages/shared:
-    specifiers:
-      '@splogged/ui': workspace:^4.5.6
-    dependencies:
-      '@splogged/ui': link:../ui
+    specifiers: {}
 
   packages/stream:
     specifiers:

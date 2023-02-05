@@ -30,6 +30,6 @@ const reStream = createObject(Stream, {
 })
 
 
-setInterval(() => {
-    reStream.write(testContent)
-}, 1000)
+// setInterval(() => {
+//     reStream.write(testContent)
+// }, 1000)

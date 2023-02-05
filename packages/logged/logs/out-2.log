@@ -1,4 +1,4 @@
-red[2023-01-14T14:02:06.061] [all] 重要 - {
+red[2023-01-20T22:17:06.145] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -23,7 +23,7 @@ red[2023-01-14T14:02:06.061] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:07.058] [all] 重要 - {
+red[2023-01-20T22:17:07.146] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -48,7 +48,7 @@ red[2023-01-14T14:02:07.058] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:08.059] [all] 重要 - {
+red[2023-01-20T22:17:08.147] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -73,7 +73,7 @@ red[2023-01-14T14:02:08.059] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:09.060] [all] 重要 - {
+red[2023-01-20T22:17:09.148] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -98,7 +98,7 @@ red[2023-01-14T14:02:09.060] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:10.061] [all] 重要 - {
+red[2023-01-20T22:17:10.148] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -123,7 +123,7 @@ red[2023-01-14T14:02:10.061] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:11.062] [all] 重要 - {
+red[2023-01-20T22:17:11.148] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -148,7 +148,7 @@ red[2023-01-14T14:02:11.062] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:12.064] [all] 重要 - {
+red[2023-01-20T22:17:12.148] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -173,7 +173,7 @@ red[2023-01-14T14:02:12.064] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:13.068] [all] 重要 - {
+red[2023-01-20T22:17:13.150] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -198,7 +198,7 @@ red[2023-01-14T14:02:13.068] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:14.072] [all] 重要 - {
+red[2023-01-20T22:17:14.151] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -223,7 +223,7 @@ red[2023-01-14T14:02:14.072] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:15.074] [all] 重要 - {
+red[2023-01-20T22:17:15.151] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -248,7 +248,7 @@ red[2023-01-14T14:02:15.074] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:16.077] [all] 重要 - {
+red[2023-01-20T22:17:16.152] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -273,7 +273,7 @@ red[2023-01-14T14:02:16.077] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:17.081] [all] 重要 - {
+red[2023-01-20T22:17:17.153] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -298,7 +298,7 @@ red[2023-01-14T14:02:17.081] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:18.086] [all] 重要 - {
+red[2023-01-20T22:17:18.153] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -323,7 +323,7 @@ red[2023-01-14T14:02:18.086] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:19.088] [all] 重要 - {
+red[2023-01-20T22:17:19.153] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -348,7 +348,7 @@ red[2023-01-14T14:02:19.088] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:20.093] [all] 重要 - {
+red[2023-01-20T22:17:20.158] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -373,7 +373,7 @@ red[2023-01-14T14:02:20.093] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:21.096] [all] 重要 - {
+red[2023-01-20T22:17:21.159] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -398,7 +398,7 @@ red[2023-01-14T14:02:21.096] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:22.099] [all] 重要 - {
+red[2023-01-20T22:17:22.158] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -423,7 +423,7 @@ red[2023-01-14T14:02:22.099] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:23.101] [all] 重要 - {
+red[2023-01-20T22:17:23.159] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -448,7 +448,7 @@ red[2023-01-14T14:02:23.101] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:24.104] [all] 重要 - {
+red[2023-01-20T22:17:24.160] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -473,7 +473,7 @@ red[2023-01-14T14:02:24.104] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-14T14:02:25.104] [all] 重要 - {
+red[2023-01-20T22:17:25.161] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -498,7 +498,7 @@ red[2023-01-14T14:02:25.104] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-20T22:16:42.138] [all] 重要 - {
+red[2023-01-20T22:17:26.162] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
@@ -523,7 +523,7 @@ red[2023-01-20T22:16:42.138] [all] 重要 - {
   },
   _Object: { _Promise: Promise { [Array] }, BigInt: [Function: BigInt], n: 1n }
 }
-red[2023-01-20T22:16:43.133] [all] 重要 - {
+red[2023-01-20T22:17:27.162] [all] 重要 - {
   _Symbol: Symbol(20%),
   _String: '10',
   arr: [
