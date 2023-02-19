@@ -1,0 +1,29 @@
+@themes: {
+  @light: {
+    @import (once) './light.less';
+  }
+
+  @dark: {
+    @import (once) './dark.less';
+  }
+}
+
+
+#themify(@props) {
+  each(@themes, .(@theme, @k, @i) {
+      @themeClass: replace(@k, '@', '');
+
+      body.theme-@{themeClass} & {
+        each(@props, {
+            @removeNoAt: replace("@{value}", '((?<!@)\b\w+)', '', 'g');
+            @removeAt: replace(@removeNoAt, '@', '', 'g');
+            @removeSpace: replace(@removeAt, ' ', '', 'g');
+            @{key}: replace(~"@{value}", '(@\b\w+)', @theme[@@removeSpace], "g");
+          }
+
+        )
+      }
+    }
+
+  )
+}

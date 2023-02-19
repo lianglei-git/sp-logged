@@ -1,4 +1,7 @@
 {
+    "editor.tabSize": 2,
+    "editor.largeFileOptimizations": false,
+    "editor.formatOnSave": true,
     "files.associations": {
         "*.stream": "json",
         "iostream": "cpp",

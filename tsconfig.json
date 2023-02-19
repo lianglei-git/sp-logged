@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "jsx": "react-jsx",
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
     /* Projects */
@@ -111,6 +112,7 @@
     "./packages/**/*.d.ts",
     "./packages/**/*.d.cts",
     "./packages/ui/**",
+    // "./packages/ui-v2/**",
     "./packages/client/**",
     "./examples/**/*.*",
     "./bench/**",

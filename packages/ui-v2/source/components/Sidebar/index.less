@@ -1,0 +1,89 @@
+@import "../../theme/util.less";
+
+
+
+.Sidebar {
+  width: 17%;
+  border-top-left-radius: 30px;
+  padding: 20px;
+  box-sizing: border-box;
+
+  #themify( {
+      color: '@text_color_11';
+      background-color: '@layer_10';
+    }
+
+  );
+
+  .sp-switch {
+    // height: 6px;
+    position: relative;
+    margin-top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    img {
+      position: absolute;
+      top: -55px;
+      left: -16px;
+      width: 50px;
+    }
+
+    &::after {
+      position: absolute;
+      content: "Logged";
+      right: -20px;
+      top: -42px;
+      font-family: fantasy;
+    }
+
+    .sp-switch-icon {
+
+      // width: 6px !important;
+      // height: 5px !important;
+      // top: 0;
+      #themify( {
+          background-color: '@layer_1';
+        }
+
+      );
+    }
+  }
+
+  .list {
+    >div {
+      padding: 4px 6px;
+      border-radius: 6px;
+      margin: 10px 0;
+      cursor: pointer;
+
+      #themify( {
+          background-color: '@layer_10';
+        }
+
+      );
+
+      &:hover {
+        filter: brightness(1.1);
+
+
+      }
+    }
+
+    .active {
+      color: #fff;
+
+      &:hover {
+        filter: brightness(1);
+      }
+
+      #themify( {
+          background-color: '@side_active_back';
+        }
+
+      )
+    }
+  }
+
+
+}

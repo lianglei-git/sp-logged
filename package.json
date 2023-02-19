@@ -3,12 +3,13 @@
   "version": "0.0.1",
   "description": "",
   "main": "index.js",
-  "private":"true",
+  "private": "true",
   "packageManager": "pnpm@7.25.0",
   "type": "module",
   "scripts": {
     "test": "pnpm --filter @splogged/stream cout ./cout.ts",
-    "ui:design1": "pnpm --filter=splogged run ui_auxiliary:1.0 & sleep 2 & pnpm -C packages/ui run start"
+    "ui:dev": "pnpm -C ./packages/ui-v2 run dev",
+    "client:design1": "pnpm --filter=splogged run ui_auxiliary:1.0 & sleep 2 & pnpm -C packages/ui run start"
   },
   "keywords": [],
   "author": "",
