@@ -26,7 +26,7 @@ const ThemeClass = () => {
       inactive-icon="sp-icon-favorites-fill"
       active-color="rgb(122 122 125)"
       inactive-color="rgb(235 235 255)"
-      width={78}
+      width={38}
     >
       <img src={logo} alt="" />
     </sp-switch>
