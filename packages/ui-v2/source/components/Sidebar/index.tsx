@@ -22,8 +22,8 @@ const ThemeClass = () => {
   return (
     <sp-switch
       ref={switchRef}
-      active-icon="sp-icon-hot"
-      inactive-icon="sp-icon-favorites-fill"
+      active-icon="sp-icon-shouhuiyueliang"
+      inactive-icon=" sp-icon-taiyang"
       active-color="rgb(122 122 125)"
       inactive-color="rgb(235 235 255)"
       width={38}

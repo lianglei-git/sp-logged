@@ -1,5 +1,6 @@
 import "@sparrowend/ui";
 import "@sparrowend/ui/dist/spui.css";
+import "../public/font/iconfont.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/App";

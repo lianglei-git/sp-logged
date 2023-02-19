@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "sp-icon";
+  /* Project id 3904176 */
+  src: url('iconfont.woff2?t=1676803039867') format('woff2'),
+    url('iconfont.woff?t=1676803039867') format('woff'),
+    url('iconfont.ttf?t=1676803039867') format('truetype');
+}
+
+.icon-ai250:before {
+  content: "\e6ee";
+}
+
+.sp-icon-taiyang:before {
+  content: "\e6e0";
+}
+
+.sp-icon-shouhuiyueliang:before {
+  content: "\ed8c";
+}

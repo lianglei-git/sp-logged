@@ -1,0 +1,30 @@
+{
+  "id": "3904176",
+  "name": "logged",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "999258",
+      "name": "太阳",
+      "font_class": "ai250",
+      "unicode": "e6ee",
+      "unicode_decimal": 59118
+    },
+    {
+      "icon_id": "5483402",
+      "name": "太阳",
+      "font_class": "taiyang",
+      "unicode": "e6e0",
+      "unicode_decimal": 59104
+    },
+    {
+      "icon_id": "27401453",
+      "name": "手绘月亮",
+      "font_class": "shouhuiyueliang",
+      "unicode": "ed8c",
+      "unicode_decimal": 60812
+    }
+  ]
+}
