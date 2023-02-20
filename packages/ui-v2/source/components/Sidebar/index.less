@@ -5,8 +5,15 @@
 .Sidebar {
   width: 17%;
   border-top-left-radius: 30px;
-  padding: 20px;
   box-sizing: border-box;
+  transition: width .2s, transform .2s;
+  padding: 20px 0;
+  position: relative;
+
+  .mark {
+    position: absolute;
+    display: none;
+  }
 
   #themify( {
       color: '@text_color_11';
@@ -25,14 +32,14 @@
     img {
       position: absolute;
       top: -55px;
-      left: -50px;
+      left: -55px;
       width: 50px;
     }
 
     svg {
       position: absolute;
       content: "";
-      right: -68px;
+      right: -58px;
       top: -48px;
       font-family: fantasy;
       width: 95px;
@@ -74,6 +81,8 @@
   }
 
   .list {
+    padding: 0 20px;
+
     >div {
       padding: 4px 6px;
       border-radius: 6px;
@@ -109,4 +118,36 @@
   }
 
 
+}
+
+
+// @media only screen and (min-width: 320px) and (max-width: 480px) and (resolution: 150dpi) {
+// }
+
+// @media only screen and (max-width: 420px) {
+//   .Sidebar {
+//     color: red !important;
+//     width: 0;
+//     padding: 0;
+
+//   }
+// }
+
+@media only screen and (max-width: 980px) {
+  .Sidebar {
+    width: 0;
+    transform: translateX(-100%);
+
+    div {
+      overflow: hidden;
+      padding: 0 !important;
+    }
+
+    .mark {
+      display: block;
+      left: 10px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
 }

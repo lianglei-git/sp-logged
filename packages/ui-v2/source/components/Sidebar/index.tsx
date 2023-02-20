@@ -42,6 +42,7 @@ export default () => {
   };
   return (
     <div className="Sidebar">
+      <em className="mark sp-icon sp-icon-mulu"> </em>
       <div>
         <ThemeClass />
       </div>

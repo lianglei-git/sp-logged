@@ -1,4 +1,5 @@
 import React, { memo, useEffect, useRef, useState } from "react";
+import { Notify } from "@sparrowend/ui";
 import "./index.less";
 const Header = memo(() => {
   return (
@@ -18,10 +19,30 @@ const Header = memo(() => {
   );
 });
 
+let time = null;
+const Content = () => {
+  useEffect(() => {
+    setInterval(() => {
+      if (time) {
+        clearInterval(time);
+
+        return (time = 0);
+      }
+      time = Notify({
+        type: "warning",
+        title: "Tips",
+        message: "All Errors!",
+        position: "bottom-left",
+      });
+    }, 5000);
+  }, []);
+};
+
 export default () => {
   return (
     <div className="dashboard">
       <Header />
+      <Content />
     </div>
   );
 };

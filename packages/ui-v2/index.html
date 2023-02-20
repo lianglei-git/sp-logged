@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Logged UI Design </title>
+    <style>
+        /* body {
+            font-size: 16px;
+        } */
+    </style>
 </head>
+
 <body>
     <div id="root"></div>
     <script type="module" src="/source/main.tsx"></script>
 </body>
+<script>
+    const htmlEl = document.documentElement
+
+    function setRemUnit() {
+        let yu = 50;
+        if (htmlEl.clientWidth <= 400) {
+            yu = 50;
+        } else if (htmlEl.clientWidth <= 800 && htmlEl.clientWidth >= 400) {
+            yu = 80;
+        } else if (htmlEl.clientWidth <= 1080 && htmlEl.clientWidth >= 800) {
+            yu = 100;
+        } else if (htmlEl.clientWidth <= 1360 && htmlEl.clientWidth >= 800) {
+            yu = 140;
+        } else if (htmlEl.clientWidth >= 1360) {
+            yu = 160;
+        }
+        const htmlWidth = htmlEl.clientWidth
+        const htmlFontSize = htmlWidth / yu
+        htmlEl.style.fontSize = htmlFontSize + "px"
+    }
+    setRemUnit()
+
+    window.addEventListener("resize", setRemUnit)
+</script>
+
 </html>

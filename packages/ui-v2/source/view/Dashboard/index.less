@@ -27,6 +27,7 @@
 
     .title {
       font-weight: 500;
+      font-size: 2rem;
 
       #themify( {
           color: '@text_color_9';
@@ -42,9 +43,9 @@
     }
 
     .plan {
-      padding: 8px 12px;
+      padding: 1rem 1.2rem;
       border-radius: 10px;
-      font-size: 13px;
+      font-size: 1.5rem;
 
       #themify( {
           color: '@layer_6';
@@ -56,14 +57,14 @@
 
     .tips {
       color: red;
-      font-size: 20px;
+      font-size: 2rem;
       margin: 0 10px;
     }
 
     .shoucang {
       animation: blink 1s infinite;
       margin-right: 4px;
-      font-size: 16px;
+      font-size: 1.5rem;
     }
   }
 }
@@ -74,4 +75,14 @@
     color: transparent;
   }
 
+}
+
+@media only screen and (max-width: 980px) {
+  .dashboard {
+    header {
+      .title {
+        margin-left: 25px;
+      }
+    }
+  }
 }

@@ -2,17 +2,21 @@ import { makeObservable, observable } from 'mobx'
 import { createContext, useContext } from 'react';
 import MonitorsStore from './Monitors';
 import DashboardStore from './Dashboard';
-
-export type IPanelType = 'Dashboard' | 'Monitors'
+import Ws from './ws'
+import writeConfig from '../../config'
+import Observe from './observe'
+export type IPanelType = 'Dashboard' | 'Monitors';
 
 class AppStore {
   constructor() {
     makeObservable(this);
   }
 
+  Config = writeConfig;
   Monitors = new MonitorsStore(this);
   Dashboard = new DashboardStore(this);
-
+  Ws = Ws.create(this.Config);
+  Observe = new Observe(this);
 
   @observable panelType: IPanelType = 'Dashboard'
   @observable key = null;
