@@ -21,7 +21,7 @@ const Title = () => {
           <path d={path1}></path>
         </g>
 
-        <g transform="translate(58.34417533874512,28.400001525878906) scale(1.4)">
+        <g transform="translate(54.34417533874512,28.400001525878906) scale(1.4)">
           <path d={path2}></path>
         </g>
       </g>
