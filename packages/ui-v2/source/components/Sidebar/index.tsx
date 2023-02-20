@@ -3,6 +3,7 @@ import { useAppStore } from "../../hooks";
 import "./index.less";
 import logo from "../../../public/logo.png";
 import { IPanelType } from "@store/index";
+import Title from "./title";
 /** theme Change */
 const ThemeClass = () => {
   const switchRef: any = useRef(null);
@@ -29,6 +30,7 @@ const ThemeClass = () => {
       width={38}
     >
       <img src={logo} alt="" />
+      <Title />
     </sp-switch>
   );
 };
