@@ -2,8 +2,19 @@ import React, { memo, useEffect, useRef, useState } from "react";
 import { Notify } from "@sparrowend/ui";
 import "./index.less";
 const Header = memo(() => {
+  // const [p, Cp] = useState(false);
+  // const pRef = useRef(null);
+  // useEffect(() => {
+  //   console.log(pRef.current, "pRef.current");
+  //   pRef.current.onChange = () => {
+  //     console.log("aaaaa");
+  //     Cp(!p);
+  //     console.log(p);
+  //   };
+  // }, [p]);
   return (
     <header>
+      {/* <sp-switch ref={pRef}>{p + ""}</sp-switch> */}
       <span className="title">Hello Sparrow</span>
       <div className="other">
         <span className="plan">
