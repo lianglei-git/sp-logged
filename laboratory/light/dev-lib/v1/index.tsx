@@ -36,11 +36,11 @@ const LightV1 = ({ children }) => {
       "v1-basic"
     );
     store.canvasApp = canvasApp;
-    // store.canvasApp.draw_sun();
     canvasApp.start();
   }, []);
 
   const resizeEvent = useCallback(() => {
+    console.log(9919991919);
     const canvasConfig = {
       width: window.innerWidth,
       height: window.innerHeight,
