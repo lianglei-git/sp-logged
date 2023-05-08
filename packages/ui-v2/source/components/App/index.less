@@ -10,10 +10,26 @@ html,
 
 .app {
   display: flex;
+  flex-direction: column;
 
-  .content {
-    flex: 1;
-    width: 1px;
+  .spa {
+    display: flex;
+    height: 100%;
 
+    .content {
+      flex: 1;
+      width: 1px;
+
+    }
   }
+
+  >footer {
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(245, 144, 144);
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+
 }

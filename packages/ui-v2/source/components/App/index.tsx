@@ -8,8 +8,14 @@ export default observer(() => {
   const app = useAppStore();
   return (
     <div className="app">
-      <Sidebar />
-      <div className="content">{app.getCurrentPanelStore().PanelDom}</div>
+      <div className="spa">
+        <Sidebar />
+        <div className="content">{app.getCurrentPanelStore().PanelDom}</div>
+      </div>
+      <footer>
+        <div className="l"></div>
+        <div className="r">When it was nealy 6:00, The sun will set.</div>
+      </footer>
     </div>
   );
 });

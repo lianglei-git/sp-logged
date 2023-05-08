@@ -1,0 +1,59 @@
+.home-page {
+  width: 100%;
+  height: 100%;
+  // background-image: radial-gradient(#db614c, #e0d865);
+  // background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+
+  display: flex;
+  flex-direction: column;
+
+  header {
+    height: 40px;
+    // background-color: rgb(255, 255, 255);
+    // background-image: linear-gradient(-225deg, #5D9FFF 0%, #B8DCFF 48%, #6BBBFF 100%);
+    // background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+    background-image: linear-gradient(100deg, #ffffff 0%, #ace0f9 70%);
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+
+    .logo {
+      display: flex;
+      align-items: center;
+      align-self: center;
+      font-size: 22px;
+      font-weight: bold;
+      letter-spacing: 0.6px;
+
+      img {
+        height: 35px;
+        margin-right: 15px;
+      }
+
+    }
+  }
+
+  .content {
+    flex: 1;
+    height: 1;
+    display: flex;
+    justify-content: space-between;
+
+    .c {
+      width: 475px;
+
+    }
+  }
+
+  footer {
+    background-color: red;
+    height: 50px;
+  }
+
+  iframe {
+    width: 475px;
+    height: 675px;
+    border: none;
+  }
+}
