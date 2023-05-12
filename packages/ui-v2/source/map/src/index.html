@@ -81,13 +81,13 @@
 </script>
   <script type="module">
     import * as THREE from '../build/three.module.js';
-    import { OrbitControls } from './jsm/controls/OrbitControls.js';
-    import Stats from './jsm/libs/stats.module.js';
-    import { Line2 } from './jsm/lines/Line2.js';
-    import { LineMaterial } from './jsm/lines/LineMaterial.js';
-    import { LineGeometry } from './jsm/lines/LineGeometry.js';
-    import { TWEEN } from './jsm/libs/tween.module.min.js';
-    import { GUI } from './jsm/libs/dat.gui.module.js';
+    import { OrbitControls } from '../build/OrbitControls.js';
+    import { Line2 } from '../build/lines/Line2.js';
+    import { LineMaterial } from '../build/lines/LineMaterial.js';
+    import { LineGeometry } from '../build/lines/LineGeometry.js';
+    import { TWEEN } from '../build/tween.module.min.js';
+    import Stats from '../build/stats.module.js';
+    import { GUI } from '../build/dat.gui.module.js';
     let renderer, camera, scene, gui, light, stats, controls, geometry, material, line, matLine, mesh, stars, uniforms;
     const Dom = document.querySelector('#container');
     const radius = 5;
