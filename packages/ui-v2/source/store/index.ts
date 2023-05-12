@@ -6,10 +6,16 @@ import Ws from './ws'
 import writeConfig from '../../config'
 import Observe from './observe'
 export type IPanelType = 'Dashboard' | 'Monitors' | 'Logs' | 'AppStore' | 'Tools' | 'SQL-Search' | 'Settings' | 'Canvas' | 'Crash' | 'Count' | 'Console';
-
+import { getDailySentence } from '../../api'
 class AppStore {
   constructor() {
     makeObservable(this);
+    getDailySentence(this.Config.dailyAPILevel).then((data: { content: string, origin: string }) => {
+      this.dailySentenceLive = data;
+      if (data?.origin.indexOf('《') == -1) {
+        this.dailySentenceLive.origin = "《" + data.origin + "》"
+      }
+    })
   }
 
   Config = writeConfig;
@@ -17,6 +23,8 @@ class AppStore {
   Dashboard = new DashboardStore(this);
   Ws = Ws.create(this.Config);
   Observe = new Observe(this);
+  @observable dailySentenceLive!: { content: string, origin?: string };
+
 
   @observable panelType: IPanelType = 'Dashboard'
   @observable key = null;
@@ -75,6 +83,7 @@ class AppStore {
       key: 'Count'
     }
   ]
+
 }
 
 const appStore = new AppStore();

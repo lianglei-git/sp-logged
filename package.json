@@ -9,6 +9,7 @@
   "scripts": {
     "test": "pnpm --filter @splogged/stream cout ./cout.ts",
     "ui:dev": "pnpm -C ./packages/ui-v2 run dev",
+    "website": "pnpm -C ./website start",
     "client:design1": "pnpm --filter=splogged run ui_auxiliary:1.0 & sleep 2 & pnpm -C packages/ui run start"
   },
   "keywords": [],
