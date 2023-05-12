@@ -22,7 +22,7 @@ enum ILevel {
 const getDailySentence = async (level: ILevel) => {
   const d1 = await getDailySentence1();
   const d2 = await getDailySentence2();
-  const data = { content: '坚持你的坚持✊', origin: '' }
+  const data = { content: '坚持你的坚持✊', origin: '《Sparrow》' }
 
   if (level == ILevel['v2']) {
     if (d2?.data?.hitokoto) {
