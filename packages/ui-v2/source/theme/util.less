@@ -13,7 +13,7 @@
   each(@themes, .(@theme, @k, @i) {
       @themeClass: replace(@k, '@', '');
 
-      body.theme-@{themeClass} & {
+      .theme-@{themeClass} & {
         each(@props, {
             @removeNoAt: replace("@{value}", '((?<!@)\b\w+)', '', 'g');
             @removeAt: replace(@removeNoAt, '@', '', 'g');
