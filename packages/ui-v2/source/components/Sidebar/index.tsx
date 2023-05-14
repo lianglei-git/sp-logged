@@ -10,73 +10,81 @@ const ThemeClass = () => {
   /** light or dark */
   const theme = useRef("light");
   // @ts-expect-error: Transition API
-  const isAppearanceTransition = document.startViewTransition &&
+  const isAppearanceTransition =
+    document.startViewTransition &&
     !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches &&
-  /** site.value.appearanceTransition */ true
+    /** site.value.appearanceTransition */ false;
 
+  const changeTheme = () => {
+    const _theme = theme.current == "light" ? "dark" : "light";
+    theme.current = _theme;
+    rewriteClassName(_theme);
+  };
 
-
-  const toggle = event => {
-
-    const css = document.createElement('style')
-    css.type = 'text/css'
+  const toggle = (event) => {
+    if (!isAppearanceTransition) {
+      return changeTheme();
+    }
+    const css = document.createElement("style");
+    css.type = "text/css";
     css.appendChild(
       document.createTextNode(
         `:not(.VPSwitchAppearance):not(.VPSwitchAppearance *) {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  -ms-transition: none !important;
-  transition: none !important;
-}`
+            -webkit-transition: none !important;
+            -moz-transition: none !important;
+            -o-transition: none !important;
+            -ms-transition: none !important;
+            transition: none !important;
+          }
+          ::view-transition-old(root),
+          ::view-transition-new(root) {
+              animation: none;
+              mix-blend-mode: normal;
+            }
+`
       )
-    )
-    document.head.appendChild(css)
+    );
+    document.head.appendChild(css);
 
-
-    const isDark = theme.current == 'dark';
+    const isDark = theme.current == "dark";
 
     const transition = document.startViewTransition(() => {
-      // rewriteClassName((isDark = !isDark))
-      // userPreference = isDark
-      //   ? query.matches ? 'auto' : 'dark'
-      //   : query.matches ? 'light' : 'auto'
-      // localStorage.setItem(APPEARANCE_KEY, userPreference)
-      const _theme = theme.current == "light" ? "dark" : "light";
-      theme.current = _theme;
-      rewriteClassName(_theme)
-    })
-    const x = event.clientX
-    const y = event.clientY
+      changeTheme();
+    });
+    const x = event.clientX;
+    const y = event.clientY;
     const endRadius = Math.hypot(
       Math.max(x, innerWidth - x),
-      Math.max(y, innerHeight - y),
-    )
+      Math.max(y, innerHeight - y)
+    );
     transition.ready.then(() => {
       const clipPath = [
         `circle(0px at ${x}px ${y}px)`,
         `circle(${endRadius}px at ${x}px ${y}px)`,
-      ]
-      console.log(isDark, clipPath, 'isDarkisDark')
+      ];
+      console.log(isDark, clipPath, "isDarkisDark");
       document.documentElement.animate(
         {
           clipPath: isDark ? clipPath : [...clipPath].reverse(),
         },
         {
           duration: 500,
-          easing: 'ease-in',
-          pseudoElement: isDark ? '::view-transition-new(root)' : '::view-transition-old(root)',
-        },
-      )
-    })
+          easing: "ease-in",
+          pseudoElement: isDark
+            ? "::view-transition-new(root)"
+            : "::view-transition-old(root)",
+        }
+      );
 
-  }
-
+      setTimeout(() => {
+        css.remove();
+      }, 610);
+    });
+  };
 
   useEffect(() => {
     rewriteClassName(theme.current);
   }, []);
-
 
   const rewriteClassName = (_theme: string) => {
     document.documentElement.className = "theme-" + _theme;
@@ -117,6 +125,10 @@ export default () => {
               onClick={() => changeTab(item.key)}
               className={item.key === app.panelType ? "active" : ""}
             >
+              {item.iconName && (
+                <span className={"sp-icon " + item.iconName}></span>
+              )}
+
               <span>{item.key}</span>
             </div>
           );

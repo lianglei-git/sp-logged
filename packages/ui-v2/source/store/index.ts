@@ -7,6 +7,7 @@ import writeConfig from '../../config'
 import Observe from './observe'
 export type IPanelType = 'Dashboard' | 'Monitors' | 'Logs' | 'AppStore' | 'Tools' | 'SQL-Search' | 'Settings' | 'Canvas' | 'Crash' | 'Count' | 'Console';
 import { getDailySentence } from '../../api'
+import SettingsStore from './Settings';
 class AppStore {
   constructor() {
     makeObservable(this);
@@ -21,6 +22,7 @@ class AppStore {
   Config = writeConfig;
   Monitors = new MonitorsStore(this);
   Dashboard = new DashboardStore(this);
+  Settings = new SettingsStore(this);
   Ws = Ws.create(this.Config);
   Observe = new Observe(this);
   @observable dailySentenceLive!: { content: string, origin?: string };
@@ -35,7 +37,7 @@ class AppStore {
 
 
   /** layout config */
-  LayoutEnum: { key: IPanelType }[] = [
+  LayoutEnum: { key: IPanelType, iconName?: string }[] = [
     {
       /** total */
       key: 'Dashboard',
@@ -72,7 +74,8 @@ class AppStore {
     },
     {
       /**  */
-      key: 'Settings',
+      iconName: 'sp-icon-shezhi1',
+      key: ('Settings'),
     },
     {
       /** 报错收集 */
