@@ -10,63 +10,42 @@
 
   );
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: center;
-    padding: 10px;
-    // box-sizing: border-box;
+  .title {
+    font-weight: 500;
+    font-size: 2rem;
 
     #themify( {
-        border-bottom: '1px solid @layer_7';
-
+        color: '@text_color_9';
       }
 
-    );
-
-    .title {
-      font-weight: 500;
-      font-size: 2rem;
-
-      #themify( {
-          color: '@text_color_9';
-        }
-
-      )
-    }
-
-    .other {
-      display: flex;
-      align-items: center;
-      align-self: center;
-    }
-
-    .plan {
-      padding: 1rem 1.2rem;
-      border-radius: 10px;
-      font-size: 1.5rem;
-
-      #themify( {
-          color: '@layer_6';
-          background-color: '@layer_9';
-        }
-
-      )
-    }
-
-    .tips {
-      color: red;
-      font-size: 2rem;
-      margin: 0 10px;
-    }
-
-    .shoucang {
-      animation: blink 1s infinite;
-      margin-right: 4px;
-      font-size: 1.5rem;
-    }
+    )
   }
+
+  .plan {
+    padding: 1rem 1.2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+
+    #themify( {
+        color: '@layer_6';
+        background-color: '@layer_9';
+      }
+
+    )
+  }
+
+  .tips {
+    color: red;
+    font-size: 2rem;
+    margin: 0 10px;
+  }
+
+  .shoucang {
+    animation: blink 1s infinite;
+    margin-right: 4px;
+    font-size: 1.5rem;
+  }
+
 }
 
 @keyframes blink {
@@ -77,12 +56,12 @@
 
 }
 
-@media only screen and (max-width: 980px) {
-  .dashboard {
-    header {
-      .title {
-        margin-left: 25px;
-      }
-    }
-  }
-}
+// @media only screen and (max-width: 980px) {
+//   .dashboard {
+//     header {
+//       .title {
+//         margin-left: 25px;
+//       }
+//     }
+//   }
+// }

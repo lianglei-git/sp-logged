@@ -8,6 +8,8 @@ import Observe from './observe'
 export type IPanelType = 'Dashboard' | 'Monitors' | 'Logs' | 'AppStore' | 'Tools' | 'SQL-Search' | 'Settings' | 'Canvas' | 'Crash' | 'Count' | 'Console';
 import { getDailySentence } from '../../api'
 import SettingsStore from './Settings';
+import GlobalOrAction from './global';
+
 class AppStore {
   constructor() {
     makeObservable(this);
@@ -22,6 +24,7 @@ class AppStore {
   Config = writeConfig;
   Monitors = new MonitorsStore(this);
   Dashboard = new DashboardStore(this);
+  GlobalOrAction = new GlobalOrAction();
   Settings = new SettingsStore(this);
   Ws = Ws.create(this.Config);
   Observe = new Observe(this);

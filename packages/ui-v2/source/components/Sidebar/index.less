@@ -8,12 +8,10 @@
   box-sizing: border-box;
   transition: width .2s, transform .2s;
   padding: 20px 0;
+  height: 100%;
   position: relative;
 
-  .mark {
-    position: absolute;
-    display: none;
-  }
+
 
   #themify( {
       color: '@text_color_11';
@@ -117,6 +115,12 @@
     }
   }
 
+  &980 {
+    width: 170px !important;
+    position: absolute;
+    transform: translate(0px, 0px) !important;
+  }
+
 
 }
 
@@ -137,18 +141,13 @@
   .Sidebar {
     width: 0;
     transform: translateX(-100%);
+    position: absolute;
 
     div {
       overflow: hidden;
       padding: 0 !important;
     }
 
-    .mark {
-      display: block;
-      left: 10px;
-      font-weight: 600;
-      font-size: 20px;
-    }
   }
 }
 

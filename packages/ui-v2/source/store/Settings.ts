@@ -11,6 +11,7 @@ class SettingsStore extends abstractStore {
   get PanelDom() {
     return Panel();
   }
+
 }
 
 export default SettingsStore;

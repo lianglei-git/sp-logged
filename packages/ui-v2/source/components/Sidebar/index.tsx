@@ -1,5 +1,11 @@
-import React, { memo, useEffect, useRef, useState } from "react";
-import { useAppStore } from "../../hooks";
+import React, {
+  memo,
+  useEffect,
+  useLayoutEffect,
+  useRef,
+  useState,
+} from "react";
+import { useAppStore, useMessageListen } from "../../hooks";
 import "./index.less";
 import logo from "../../../public/logo.png";
 import { IPanelType } from "@store/index";
@@ -13,7 +19,7 @@ const ThemeClass = () => {
   const isAppearanceTransition =
     document.startViewTransition &&
     !window.matchMedia(`(prefers-reduced-motion: reduce)`).matches &&
-    /** site.value.appearanceTransition */ false;
+    /** site.value.appearanceTransition */ true;
 
   const changeTheme = () => {
     const _theme = theme.current == "light" ? "dark" : "light";
@@ -108,12 +114,52 @@ const ThemeClass = () => {
 
 export default () => {
   const app = useAppStore();
+  const SidebarRef = useRef(null);
+  const [showSidebar, setShowSidebar] = useState<1 | 2 | 3>(1);
+
   const changeTab = (k: IPanelType) => {
     app.panelType = k;
   };
+  const classBack = () => {
+    if (window.innerWidth > 980) {
+      setShowSidebar(1);
+    }
+    if (window.innerWidth < 980) {
+      setShowSidebar(2);
+    }
+  };
+  useLayoutEffect(() => {
+    window.onresize = () => {
+      classBack();
+    };
+  }, []);
+  // 只有小于980屏幕才会有这个方法
+  const SidebarClick = (e: Event) => {
+    e.stopPropagation();
+  };
+  useMessageListen("toggleSidebar980", () => {
+    let el: HTMLElement | null = SidebarRef.current;
+    if (el == null) return "";
+    let is = el.classList.toggle("Sidebar980");
+    function cancelSidebar980() {
+      el.classList.toggle("Sidebar980");
+      app.GlobalOrAction.closeGlobalMark();
+      window.removeEventListener("mousedown", cancelSidebar980);
+    }
+    if (is) {
+      setTimeout(() => {
+        el.style.zIndex = app.GlobalOrAction.zIndex;
+        app.GlobalOrAction.openGlobalMark();
+        window.addEventListener("mousedown", cancelSidebar980);
+      });
+    }
+  });
   return (
-    <div className="Sidebar">
-      <em className="mark sp-icon sp-icon-mulu"> </em>
+    <div
+      className={["Sidebar", "level" + showSidebar].join(" ")}
+      onMouseDownCapture={SidebarClick}
+      ref={SidebarRef}
+    >
       <div>
         <ThemeClass />
       </div>

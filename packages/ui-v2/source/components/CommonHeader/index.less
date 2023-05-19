@@ -1,0 +1,63 @@
+@import '../../theme/util.less';
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  padding: 10px;
+  // box-sizing: border-box;
+
+  #themify( {
+      border-bottom: '1px solid @layer_7';
+
+    }
+
+  );
+
+  main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  .other {
+    display: flex;
+    align-items: center;
+    align-self: center;
+  }
+
+  .float-mulu {
+    // position: absolute;
+    display: none;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      #themify( {
+          color: '@text_color_11';
+
+        }
+
+      );
+    }
+
+    #themify( {
+        color: '@text_color_9';
+
+      }
+
+    );
+  }
+
+}
+
+@media only screen and (max-width: 980px) {
+  .float-mulu {
+    display: block !important;
+    left: 10px;
+    font-weight: 600;
+    font-size: 20px;
+  }
+}

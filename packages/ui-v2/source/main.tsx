@@ -5,6 +5,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./components/App";
 import { AppStoreContext, appStore } from "./store";
+import GlobalMark from "./components/GlobalMark";
 // import Light from "@sp-laboratory/light/dev-lib/index";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
     <AppStoreContext.Provider value={appStore}>
       {/* <Light version="v1"> */}
       <App />
+      <GlobalMark />
       {/* </Light> */}
     </AppStoreContext.Provider>
   </React.StrictMode>
