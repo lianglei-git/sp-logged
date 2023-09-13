@@ -9,6 +9,8 @@ export type IPanelType = 'Dashboard' | 'Monitors' | 'Logs' | 'AppStore' | 'Tools
 import { getDailySentence } from '../../api'
 import SettingsStore from './Settings';
 import GlobalOrAction from './global';
+import CanvasStore from './Canvas';
+import LogsStore from './Logs';
 
 class AppStore {
   constructor() {
@@ -25,6 +27,8 @@ class AppStore {
   Monitors = new MonitorsStore(this);
   Dashboard = new DashboardStore(this);
   GlobalOrAction = new GlobalOrAction();
+  Canvas = new CanvasStore(this);
+  Logs = new LogsStore(this);
   Settings = new SettingsStore(this);
   Ws = Ws.create(this.Config);
   Observe = new Observe(this);
@@ -44,49 +48,58 @@ class AppStore {
     {
       /** total */
       key: 'Dashboard',
+      iconName: 'ri-dashboard-2-line',
       // component: this.Dashboard.getPanelDom()
     },
     {
       /** Monitors： */
       key: 'Monitors',
+      iconName: "ri-bug-line"
       // component: this.Monitors.getPanelDom()
     },
     {
       /** Log */
       key: 'Logs',
+      iconName: 'ri-file-chart-line'
       // component: this.Monitors.getPanelDom()
     },
     {
       /** 大数据展示 */
       key: 'Canvas',
+      iconName: 'ri-heavy-showers-line'
       // component: this.Monitors.getPanelDom()
     },
     {
       /** app Store */
       key: 'AppStore',
+      iconName: 'ri-store-2-line'
       // component: this.Monitors.getPanelDom()
     },
     {
       /** app Tools */
       key: 'Tools',
+      iconName: "ri-tools-line"
       // component: this.Monitors.getPanelDom()
     },
     {
       /** discover */
       key: 'SQL-Search',
+      iconName: 'ri-database-2-line'
     },
     {
       /**  */
-      iconName: 'sp-icon-shezhi1',
+      iconName: 'ri-settings-3-line',
       key: ('Settings'),
     },
     {
       /** 报错收集 */
-      key: 'Crash'
+      key: 'Crash',
+      iconName: "ri-donut-chart-line"
     },
     {
       /** 埋点统计 */
-      key: 'Count'
+      key: 'Count',
+      iconName: "ri-compass-line"
     }
   ]
 

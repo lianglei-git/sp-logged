@@ -11,7 +11,9 @@ export default observer(() => {
     <div className="app">
       <div className="spa">
         <Sidebar />
-        <div className="content">{app.getCurrentPanelStore().PanelDom}</div>
+        <div className="content">
+          {app.getCurrentPanelStore()?.PanelDom || app.panelType}
+        </div>
       </div>
       <CommonFooter />
     </div>

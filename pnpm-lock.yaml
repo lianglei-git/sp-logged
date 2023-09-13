@@ -93,7 +93,7 @@ importers:
     specifiers:
       '@babel/runtime': ^7.20.13
       '@sp-laboratory/light': workspace:*
-      '@sparrowend/ui': ^1.1.5
+      '@sparrowend/ui': ^1.3.1
       '@types/react': ^18.0.27
       '@types/react-dom': ^18.0.10
       '@vitejs/plugin-react': ^3.1.0
@@ -108,7 +108,7 @@ importers:
       vite: ^4.1.0
     dependencies:
       '@sp-laboratory/light': link:../../laboratory/light
-      '@sparrowend/ui': 1.1.5
+      '@sparrowend/ui': 1.3.1
       axios: 1.4.0
       mobx: 6.8.0
       mobx-react: 7.6.0_woojb62cqeyk443mbl7msrwu2e
@@ -1069,6 +1069,10 @@ packages:
 
   /@sparrowend/ui/1.1.5:
     resolution: {integrity: sha512-fAIXQquMW2PUkxSfbG5VBWOlxFzDWldTTBDD9hOTCX1fyYAxU0NyuNFde1eRgeidH4aHLUKC1MjILEtB96RoMg==}
+    dev: false
+
+  /@sparrowend/ui/1.3.1:
+    resolution: {integrity: sha512-LcYS/GOUCowTcTsAb2REQqVbYIdW+sTPUNFhFS2GRLhiRhmPF9Rci/gBigDXOjY6aKkk9suh6gidXNp13y6JYQ==}
     dev: false
 
   /@types/chai-subset/1.3.3:
@@ -2752,6 +2756,13 @@ packages:
     requiresBuild: true
     optional: true
 
+  /fsevents/2.3.3:
+    resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
+    engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
+    os: [darwin]
+    requiresBuild: true
+    optional: true
+
   /function-bind/1.1.1:
     resolution: {integrity: sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==}
 
@@ -2900,6 +2911,12 @@ packages:
   /graceful-fs/4.2.10:
     resolution: {integrity: sha512-9ByhssR2fPVsNZj478qUUbKfmL0+t5BDVyjShtyZZLiK7ZDAArFFfopyOTj0M05wE2tJPisA4iTnnXl2YoPvOA==}
     requiresBuild: true
+    dev: false
+
+  /graceful-fs/4.2.11:
+    resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+    requiresBuild: true
+    optional: true
 
   /grapheme-splitter/1.0.4:
     resolution: {integrity: sha512-bzh50DW9kTPM00T8y4o8vQg89Di9oLJVLW/KaOGIXJWP/iqCN6WKYkbNOF04vFLJhwcpYUh9ydh/+5vpOqV4YQ==}
@@ -3196,7 +3213,7 @@ packages:
       tslib: 2.5.0
     optionalDependencies:
       errno: 0.1.8
-      graceful-fs: 4.2.10
+      graceful-fs: 4.2.11
       image-size: 0.5.5
       make-dir: 2.1.0
       mime: 1.6.0
@@ -3933,7 +3950,7 @@ packages:
     engines: {node: '>=10.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: false
 
   /rollup/3.17.1:
@@ -3941,7 +3958,7 @@ packages:
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
 
   /rollup/3.21.5:
     resolution: {integrity: sha512-a4NTKS4u9PusbUJcfF4IMxuqjFzjm6ifj76P54a7cKnvVzJaG12BLVR+hgU2YDGHzyMMQNxLAZWuALsn8q2oQg==}
@@ -4506,7 +4523,7 @@ packages:
       resolve: 1.22.1
       rollup: 2.79.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: false
 
   /vite/3.2.5_@types+node@18.11.18:
@@ -4540,7 +4557,7 @@ packages:
       resolve: 1.22.1
       rollup: 2.79.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: false
 
   /vite/4.1.0_less@4.1.3:
@@ -4574,7 +4591,7 @@ packages:
       resolve: 1.22.1
       rollup: 3.17.1
     optionalDependencies:
-      fsevents: 2.3.2
+      fsevents: 2.3.3
     dev: true
 
   /vite/4.1.4_less@4.1.3:

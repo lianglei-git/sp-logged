@@ -8,5 +8,6 @@
         "ostream": "cpp",
         "iosfwd": "cpp"
     },
+    "eslint.enable": false,
     "compile-hero.disable-compile-files-on-did-save-code": true
 }

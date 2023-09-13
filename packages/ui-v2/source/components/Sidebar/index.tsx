@@ -163,7 +163,7 @@ export default () => {
       <div>
         <ThemeClass />
       </div>
-      <div className="list">
+      <div className="Sidebar-list">
         {app.LayoutEnum.map((item) => {
           return (
             <div

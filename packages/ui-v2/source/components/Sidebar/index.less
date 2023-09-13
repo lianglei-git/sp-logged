@@ -1,7 +1,5 @@
 @import "../../theme/util.less";
 
-
-
 .Sidebar {
   width: 17%;
   // border-top-left-radius: 30px;
@@ -78,14 +76,24 @@
     }
   }
 
-  .list {
-    padding: 0 20px;
+  &-list {
+    margin-top: 15px;
+    padding: 0 10px;
 
     >div {
-      padding: 4px 6px;
-      border-radius: 6px;
-      margin: 10px 0;
+      padding: 8px 6px;
+      border-radius: 10px;
+      // margin: 6px 0;
       cursor: pointer;
+      display: flex;
+      align-items: center;
+      font-size: 13px;
+
+      .sp-icon {
+        margin-right: 6px;
+        font-size: 18px;
+      }
+
 
       #themify( {
           background-color: '@layer_10';

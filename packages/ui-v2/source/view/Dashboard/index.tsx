@@ -2,24 +2,23 @@ import React, { memo, useEffect, useRef, useState } from "react";
 import { Notify } from "@sparrowend/ui";
 import "./index.less";
 import CommonHeader from "@/components/CommonHeader";
-
+/** @eslint/no-check */
 let time = null;
 const Content = () => {
-  useEffect(() => {
-    setInterval(() => {
-      if (time) {
-        clearInterval(time);
-
-        return (time = 0);
-      }
-      time = Notify({
-        type: "warning",
-        title: "Tips",
-        message: "All Errors!",
-        position: "bottom-left",
-      });
-    }, 5000);
-  }, []);
+  // useEffect(() => {
+  //   setInterval(() => {
+  //     if (time) {
+  //       clearInterval(time);
+  //       return (time = 0);
+  //     }
+  //     time = Notify({
+  //       type: "warning",
+  //       title: "Tips",
+  //       message: "All Errors!",
+  //       position: "bottom-left",
+  //     });
+  //   }, 5000);
+  // }, []);
 };
 
 export default () => {
@@ -35,7 +34,7 @@ export default () => {
           <span className="sp-icon sp-icon-jingshi tips"></span>
         </div>
       </CommonHeader>
-      <Content />
+      {/* <Content /> */}
     </div>
   );
 };

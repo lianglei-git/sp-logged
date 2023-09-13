@@ -2,7 +2,7 @@
     "compilerOptions": {
       "baseUrl": ".",
       "target": "ESNext",
-      "useDefineForClassFields": true,
+      "useDefineForClassFields": false,
       "lib": ["DOM", "DOM.Iterable", "ESNext"],
       "paths": {
         "@store/*": [
@@ -19,10 +19,10 @@
         ],
       },
       "allowJs": false,
-      "skipLibCheck": true,
+      "skipLibCheck": false,
       "esModuleInterop": false,
       "allowSyntheticDefaultImports": true,
-      "strict": true,
+      "strict": false,
       "forceConsistentCasingInFileNames": true,
       "module": "ESNext",
       "moduleResolution": "Node",
